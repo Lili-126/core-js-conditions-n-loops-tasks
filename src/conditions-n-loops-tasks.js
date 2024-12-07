@@ -104,129 +104,48 @@ function isIsoscelesTriangle(a, b, c) {
  *  26  => XXVI
  */
 function convertToRomanNumerals(num) {
-  let res = num;
-  switch (num) {
-    case 1:
-      res = 'I';
-      break;
-    case 2:
-      res = 'II';
-      break;
-    case 3:
-      res = 'III';
-      break;
-    case 4:
-      res = 'IV';
-      break;
-    case 5:
-      res = 'V';
-      break;
-    case 6:
-      res = 'VI';
-      break;
-    case 7:
-      res = 'VII';
-      break;
-    case 8:
-      res = 'VIII';
-      break;
-    case 9:
-      res = 'IX';
-      break;
-    case 10:
-      res = 'X';
-      break;
-    case 11:
-      res = 'XII';
-      break;
-    case 12:
-      res = 'XII';
-      break;
-    case 13:
-      res = 'XIII';
-      break;
-    case 14:
-      res = 'XIV';
-      break;
-    case 15:
-      res = 'XV';
-      break;
-    case 16:
-      res = 'XVI';
-      break;
-    case 17:
-      res = 'XVII';
-      break;
-    case 18:
-      res = 'XVIII';
-      break;
-    case 19:
-      res = 'XIX';
-      break;
-    case 20:
-      res = 'XX';
-      break;
-    case 21:
-      res = 'XXI';
-      break;
-    case 22:
-      res = 'XXII';
-      break;
-    case 23:
-      res = 'XXIII';
-      break;
-    case 24:
-      res = 'XXIV';
-      break;
-    case 25:
-      res = 'XXV';
-      break;
-    case 26:
-      res = 'XXVI';
-      break;
-    case 27:
-      res = 'XXVII';
-      break;
-    case 28:
-      res = 'XXVIII';
-      break;
-    case 29:
-      res = 'XXIX';
-      break;
-    case 30:
-      res = 'XXX';
-      break;
-    case 31:
-      res = 'XXXI';
-      break;
-    case 32:
-      res = 'XXXII';
-      break;
-    case 33:
-      res = 'XXXIII';
-      break;
-    case 34:
-      res = 'XXXIV';
-      break;
-    case 35:
-      res = 'XXXV';
-      break;
-    case 36:
-      res = 'XXXVI';
-      break;
-    case 37:
-      res = 'XXXVII';
-      break;
-    case 38:
-      res = 'XXXVIII';
-      break;
-    case 39:
-      res = 'XXXIX';
-      break;
-    default:
-      res = 'error';
-  }
-  return res;
+  const roman = {
+    1: 'I',
+    2: 'II',
+    3: 'III',
+    4: 'IV',
+    5: 'V',
+    6: 'VI',
+    7: 'VII',
+    8: 'VIII',
+    9: 'IX',
+    10: 'X',
+    11: 'XII',
+    12: 'XII',
+    13: 'XIII',
+    14: 'XIV',
+    15: 'XV',
+    16: 'XVI',
+    17: 'XVII',
+    18: 'XVIII',
+    19: 'XIX',
+    20: 'XX',
+    21: 'XXI',
+    22: 'XXII',
+    23: 'XXIII',
+    24: 'XXIV',
+    25: 'XXV',
+    26: 'XXVI',
+    27: 'XXVII',
+    28: 'XXVIII',
+    29: 'XXIX',
+    30: 'XXX',
+    31: 'XXXI',
+    32: 'XXXII',
+    33: 'XXXIII',
+    34: 'XXXIV',
+    35: 'XXXV',
+    36: 'XXXVI',
+    37: 'XXXVII',
+    38: 'XXXVIII',
+    39: 'XXXIX',
+  };
+  return roman[num];
 }
 
 /**
